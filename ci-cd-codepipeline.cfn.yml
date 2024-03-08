@@ -330,6 +330,7 @@ Resources:
       ServiceRole: !GetAtt CodeBuildServiceRole.Arn
     DependsOn: KubectlAssumeRoleCustomResource
 
+
   CodePipelineGitHub:
     Type: AWS::CodePipeline::Pipeline
     Properties:

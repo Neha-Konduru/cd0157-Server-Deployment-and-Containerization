@@ -237,6 +237,7 @@ Resources:
                   - s3:GetBucketVersioning
     DependsOn: CodePipelineArtifactBucket
 
+
   CodeBuildServiceRole:
     Type: AWS::IAM::Role
     Properties:
@@ -371,3 +372,4 @@ Resources:
                 - Name: BuildOutput
               RunOrder: 1
     DependsOn: CodeBuildProject
+
